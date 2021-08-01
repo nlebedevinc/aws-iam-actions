@@ -1,18 +1,17 @@
 {
   "name": "aws-policy-actions",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "Retrieve a list of all known IAM actions",
+  "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nlebedevinc/aws-policy-actions.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Nick Lebedev <nlebedevme@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nlebedevinc/aws-policy-actions/issues"
   },

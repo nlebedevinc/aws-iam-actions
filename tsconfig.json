@@ -4,8 +4,6 @@
         "baseUrl": ".",
         "rootDirs": [
             "src",
-            "__tests__",
-            "__mocks__"
         ],
         "outDir": "dist",
         "typeRoots": [
@@ -37,7 +35,6 @@
     },
     "include": [
         "src/**/**.ts",
-        "config/*.js"
     ],
     "exclude": [
         "node_modules",
