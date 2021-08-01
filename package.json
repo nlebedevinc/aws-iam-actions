@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/nlebedevinc/aws-policy-actions#readme",
   "dependencies": {
-    "commander": "^8.1.0"
+    "commander": "^8.1.0",
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@tsconfig/node14": "^1.0.1",
