@@ -7,7 +7,7 @@ import https from 'https';
 const IAM_ACTIONS = 'https://awspolicygen.s3.amazonaws.com/js/policies.js';
 
 function normalize(raw: string): string {
-    return raw.substring(raw.indexOf("=") + 1);
+    return raw.substring(raw.indexOf('=') + 1);
 }
 
 // requester
@@ -45,7 +45,7 @@ function find(query: string, data: AWSActionData): Response | null {
     for (let key in serviceMap) {
         const action = serviceMap[key];
         if (serviceMap[key].StringPrefix === query) {
-            return { key: action };
+            return { [key]: action };
         }
     }
 
