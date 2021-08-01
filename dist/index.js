@@ -1,0 +1,19 @@
+#! /usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const commander_1 = require("commander");
+commander_1.program
+    .version('0.0.1')
+    .usage('[options] <serviceName>');
+commander_1.program.parse(process.argv);
+async function main() {
+    const [serviceName] = commander_1.program.args;
+    if (!serviceName) {
+        throw new Error('Please provice AWS service name');
+    }
+    console.info('success', serviceName);
+}
+main().catch(error => {
+    console.error('An error occurred during receiving and processing AWS policy actions', error);
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUEseUNBQW9DO0FBT3BDLG1CQUFPO0tBQ0YsT0FBTyxDQUFDLE9BQU8sQ0FBQztLQUNoQixLQUFLLENBQUMseUJBQXlCLENBQUMsQ0FBQztBQUV0QyxtQkFBTyxDQUFDLEtBQUssQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLENBQUM7QUFFNUIsS0FBSyxVQUFVLElBQUk7SUFDZixNQUFNLENBQUUsV0FBVyxDQUFFLEdBQUcsbUJBQU8sQ0FBQyxJQUFJLENBQUM7SUFFckMsSUFBSSxDQUFDLFdBQVcsRUFBRTtRQUNkLE1BQU0sSUFBSSxLQUFLLENBQUMsaUNBQWlDLENBQUMsQ0FBQztLQUN0RDtJQUVELE9BQU8sQ0FBQyxJQUFJLENBQUMsU0FBUyxFQUFFLFdBQVcsQ0FBQyxDQUFDO0FBQ3pDLENBQUM7QUFFRCxJQUFJLEVBQUUsQ0FBQyxLQUFLLENBQUMsS0FBSyxDQUFDLEVBQUU7SUFDakIsT0FBTyxDQUFDLEtBQUssQ0FBQyxzRUFBc0UsRUFBRSxLQUFLLENBQUMsQ0FBQztBQUNqRyxDQUFDLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIiMhIC91c3IvYmluL2VudiBub2RlXG5cbmltcG9ydCB7IHByb2dyYW0gfSBmcm9tICdjb21tYW5kZXInO1xuXG4vLyByZXF1ZXN0ZXIgY2xhc3NcblxuLy8gdmFsaWRhdGUgcHJvY2VzcyB2YXJzXG5cbi8vIGRlZmluZSBhIHByb2dyYW1cbnByb2dyYW1cbiAgICAudmVyc2lvbignMC4wLjEnKVxuICAgIC51c2FnZSgnW29wdGlvbnNdIDxzZXJ2aWNlTmFtZT4nKTtcblxucHJvZ3JhbS5wYXJzZShwcm9jZXNzLmFyZ3YpO1xuXG5hc3luYyBmdW5jdGlvbiBtYWluKCk6IFByb21pc2U8dm9pZD4ge1xuICAgIGNvbnN0IFsgc2VydmljZU5hbWUgXSA9IHByb2dyYW0uYXJncztcblxuICAgIGlmICghc2VydmljZU5hbWUpIHtcbiAgICAgICAgdGhyb3cgbmV3IEVycm9yKCdQbGVhc2UgcHJvdmljZSBBV1Mgc2VydmljZSBuYW1lJyk7XG4gICAgfVxuXG4gICAgY29uc29sZS5pbmZvKCdzdWNjZXNzJywgc2VydmljZU5hbWUpO1xufVxuXG5tYWluKCkuY2F0Y2goZXJyb3IgPT4ge1xuICAgIGNvbnNvbGUuZXJyb3IoJ0FuIGVycm9yIG9jY3VycmVkIGR1cmluZyByZWNlaXZpbmcgYW5kIHByb2Nlc3NpbmcgQVdTIHBvbGljeSBhY3Rpb25zJywgZXJyb3IpO1xufSk7Il19

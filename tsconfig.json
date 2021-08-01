@@ -1,0 +1,46 @@
+{
+    "extends": "@tsconfig/node14/tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "rootDirs": [
+            "src",
+            "__tests__",
+            "__mocks__"
+        ],
+        "outDir": "dist",
+        "typeRoots": [
+            "src/types",
+            "node_modules/@types"
+        ],
+        "types": [
+            "node"
+        ],
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "declarationDir": "dist/types",
+        "emitDecoratorMetadata": false,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "moduleResolution": "node",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "pretty": true,
+        "removeComments": true,
+        "resolveJsonModule": true,
+        "strictNullChecks": true
+    },
+    "include": [
+        "src/**/**.ts",
+        "config/*.js"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
